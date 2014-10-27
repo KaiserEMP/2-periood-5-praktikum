@@ -8,13 +8,15 @@
 <body>
 
 <form action="index.php" method="post">
+		
 		<?php if ($isSubmitted) {
 			echo $usernameMessage;
-			}
-			?>
-		Kasutaja nimi: <input type="text"></input>
+		}
+			
+		?>
+		Kasutaja nimi: <input type="text" name="username"></input>
 
-		<input type="submit" value="Saada"></input>
+		<input type="submit" value="Saada" name="submit" ></input>
 </form>
 
 </body>
